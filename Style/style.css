@@ -1,0 +1,18 @@
+/* This is needed if we use fixed-top to fix the Navbar, I used the sticky-top which works fine. So I can omit this custom class. */
+/* body::before {
+
+  display: block;
+  content: "";
+  height: 60px;
+} */
+
+#map {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+@media (min-width: 768px) {
+  .news-input {
+    width: 50%;
+  }
+}

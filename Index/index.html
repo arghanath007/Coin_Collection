@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="../Style/style.css" />
+    <title>Coin Collection</title>
+  </head>
+  <body>
+    <!-- ** Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 sticky-top">
+      <div class="container">
+        <a href="#" class="navbar-brand">Coin Collection</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#learn" class="nav-link">Learn More</a>
+            </li>
+            <li class="nav-item">
+              <a href="#questions" class="nav-link">Questions</a>
+            </li>
+            <li class="nav-item">
+              <a href="#coins" class="nav-link">Featured Coins</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- !Nav End -->
+    <!-- **Home Section -->
+    <section class="bg-dark text-light p-5 text-center text-sm-start">
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1>
+              Get Started With <span class="text-danger">Coin Collection</span>
+            </h1>
+            <p class="lead my-4">
+              It's easy to start a coin collection. You can begin with coins
+              that you already have on hand. Becoming a coin collector involves
+              a common vocabulary. Get familiar with the parts of a coin and
+              basic coin terms.
+            </p>
+            <button class="btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#started">Get Started</button>
+          </div>
+          <img
+            class="img-fluid w-100 d-none d-sm-block"
+            src="../Photos/coin-collection.jpg"
+            alt="Coin"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- !End of Home Section -->
+    <!-- ** NewsLetter start -->
+    <section class="bg-primary text-light p-5">
+      <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+          <h3 class="mb-3 mb-md-0">Sign Up To Our Newsletter</h3>
+          <div class="input-group news-input">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter Email"
+              aria-label="Recipient's Email id"
+              aria-describedby="button-addon2"
+            />
+            <button
+              class="btn bg-dark text-light btn-lg"
+              type="button"
+              id="button-addon2"
+            >
+              Button
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- !End Of NewsLetter -->
+    <!-- **Features Start -->
+
+    <section id="coins" class="p-5 bg-dark">
+      <div class="container bg-dark">
+        <div class="row text-center g-4 justify-content-center">
+          <div class="col-lg-3 col-md-4 col-sm-12 mb-3">
+            <div class="card text-dark bg-white border-primary">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <img
+                    class="img-thumbnail border-0"
+                    src="../Photos/American-Eagle.jpg"
+                    alt="American Eagle Coin"
+                  />
+                </div>
+                <h3 class="card-title mb-3 fw-bold">AMERICAN EAGLE</h3>
+                <p class="card-text">
+                  The American Eagle coin comes in a variety of denominations,
+                  designs and metals. American Eagle coins are produced by the
+                  U.S. Mint. Two American icons, the eagle, an unwavering
+                  representation of the United States, and Lady Liberty, have
+                  appeared on American Eagles since their first minting in 1986.
+                  The Silver Eagle features a design based on the original 1916
+                  Walking Liberty Silver Half Dollar while the Gold Eagle takes
+                  its design from the 1907 Saint-Gaudens Gold Double Eagle. The
+                  Platinum Eagle features a close-up of the iconic Statue of
+                  Liberty.
+                </p>
+                <a
+                  href="https://en.wikipedia.org/wiki/American_Silver_Eagle"
+                  class="btn btn-primary"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-12 mb-3">
+            <div class="card text-dark bg-white border-success">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <img
+                    class="img-thumbnail border-0"
+                    src="../Photos/Morgan.jpg"
+                    alt="Morgan Coin"
+                  />
+                </div>
+                <h3 class="card-title mb-3 fw-bold">MORGAN</h3>
+                <p class="card-text">
+                  Morgan Silver Dollars are the most collected coin in the
+                  world. Designed by George T. Morgan in 1878, the value is
+                  usually determined by the rarity of the date and mintmark
+                  together or the condition of the coin. Featuring iconic
+                  American imagery, the obverse features Lady Liberty while the
+                  reverse depicts an eagle. The Morgan Dollar holds a special
+                  place in U.S. coinage as it was the first coin to feature Lady
+                  Liberty with an American look, rather than the traditional
+                  Greek style.
+                </p>
+                <a
+                  href="https://en.wikipedia.org/wiki/Morgan_dollar"
+                  class="btn btn-primary"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-12 mb-3">
+            <div class="card text-dark bg-white border-danger">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <img
+                    class="img-thumbnail border-0"
+                    src="../Photos/PHILHARMONIC.jpg"
+                    alt="PHILHARMONIC Coin"
+                  />
+                </div>
+                <h3 class="card-title mb-3 fw-bold">PHILHARMONIC</h3>
+                <p class="card-text">
+                  The Philharmonic is a bullion coin made of Silver, Gold or
+                  Platinum by the prestigious Austrian Mint. The Gold
+                  Philharmonic was created as a Gold tribute to the renowned
+                  Vienna Philharmonic Orchestra, one of the world's most
+                  well-known orchestras. The obverse depicts the Great Organ of
+                  the Golden Hall in Vienna's concert hall, the Musikverein.
+                  These coins come in 1 oz Silver, 1 oz Platinum and a variety
+                  of Gold weights, from 1/25 oz up to 1 oz. According to the
+                  World Gold Council, Gold Austrian Philharmonics were the
+                  best-selling Gold coins in the world in 1992, 1995 and 1996.
+                  Mexican Gold LIBERTAD
+                </p>
+                <a
+                  href="https://en.wikipedia.org/wiki/Vienna_Philharmonic_(coin)"
+                  class="btn btn-primary"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-12 mb-3">
+            <div class="card text-dark bg-white border-warning">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <img
+                    class="img-thumbnail border-0"
+                    src="../Photos/LIBERTAD.jpg"
+                    alt="LIBERTAD Coin"
+                  />
+                </div>
+                <h3 class="card-title mb-3 fw-bold">LIBERTAD</h3>
+                <p class="card-text">
+                  Libertads are Silver or Gold coins produced by the Mexican
+                  Mint, renowned for being some of the most beautiful coins in
+                  the world. The obverse shows the Mexican National Seal, while
+                  the reverse features two of the most iconic images of Mexico
+                  City: the Angel of Independence statue and the volcanoes
+                  Popocatépetl and Iztaccíhuatl. These designs make Mexican
+                  Libertad coins highly symbolic of their culture. A stunning
+                  design combined with bullion value makes Libertads collector
+                  and investor favorites.
+                </p>
+                <a
+                  href="https://en.wikipedia.org/wiki/Libertad_%28coin%29"
+                  class="btn btn-primary"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-12 mb-3">
+            <div class="card text-dark bg-white border-info">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <img
+                    class="img-thumbnail border-0"
+                    src="../Photos/BRITANNIA.jpg"
+                    alt="BRITANNIA Coin"
+                  />
+                </div>
+                <h3 class="card-title mb-3 fw-bold">BRITANNIA</h3>
+                <p class="card-text">
+                  Introduced by the British Royal Mint in 1987, the Gold
+                  Britannia features an attractive design created to appeal to
+                  both collectors and investors alike. The obverse of the Gold
+                  Britannia bears a depiction of Queen Elizabeth II. The reverse
+                  pays tribute to the Britannia image that first appeared on
+                  coins produced under the rule of the Roman Emperor Hadrian.
+                  The Silver Britannia has been produced since 1997. This series
+                  offers a variety of different designs, adding collectible
+                  value on top of the Silver content.
+                </p>
+                <a
+                  href="https://en.wikipedia.org/wiki/Britannia_(coin)"
+                  class="btn btn-primary"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-12 mb-3">
+            <div class="card text-dark bg-white border-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <img
+                    class="img-thumbnail border-0"
+                    src="../Photos/PANDA.jpg"
+                    alt="PANDA Coin"
+                  />
+                </div>
+                <h3 class="card-title mb-3 fw-bold">PANDA</h3>
+                <p class="card-text">
+                  Chinese Panda coins are produced by the Central Mint of China,
+                  but are widely popular all over the world. The Chinese Panda
+                  series began with a Gold coin in 1982, followed by Silver in
+                  1983. This series has stood the test of time due to its
+                  quality Gold and Silver content along with the iconic designs.
+                  Each year depicts the animal most closely associated with
+                  China, the great panda. Sometimes a single panda is shown,
+                  other times may use an adult and cub, but all coins feature
+                  exceptional detail of the beloved animal. The obverse of each
+                  coin depicts the Hall of Prayer for Abundant Harvests in the
+                  Temple of Heaven in Beijing, bringing in another timeless
+                  Chinese element.
+                </p>
+                <a
+                  href="https://en.wikipedia.org/wiki/Chinese_Gold_Panda"
+                  class="btn btn-primary"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-12 mb-3">
+            <div class="card text-dark bg-white border-primary">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <img
+                    class="img-thumbnail border-0"
+                    src="../Photos/Francs.jpg"
+                    alt="FRANCS Coin"
+                  />
+                </div>
+                <h3 class="card-title mb-3 fw-bold">FRANCS</h3>
+                <p class="card-text">
+                  Before the introduction of the euro, Francs were used in
+                  France, Belgium and Luxembourg. The Monnaie de Paris minted
+                  Gold francs used in circulation before the euro was adopted in
+                  2002. Available from 1 Franc to 100 Francs, these coins
+                  combine collector appeal with Precious Metal value.
+                </p>
+                <a
+                  href="https://en.wikipedia.org/wiki/French_franc"
+                  class="btn btn-primary"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-12 mb-3">
+            <div class="card text-dark bg-white border-danger">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <img
+                    class="img-thumbnail border-0"
+                    src="../Photos/Ducat.jpg"
+                    alt="DUCAT Coin"
+                  />
+                </div>
+                <h3 class="card-title mb-3 fw-bold">DUCAT</h3>
+                <p class="card-text">
+                  A ducat is a Silver or Gold coin that was used as a trade coin
+                  throughout Europe from the latter parts of the medieval period
+                  to as late as the 20th century. Many types of ducats contained
+                  several metals, making their Precious Metal content lower than
+                  that of many other Gold or Silver coins. Ducats come from a
+                  variety of European countries, making them a great way to
+                  expand any collection.
+                </p>
+                <a
+                  href="https://en.wikipedia.org/wiki/Ducat"
+                  class="btn btn-primary"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- !End Of Features -->
+    <!-- ** Learning -->
+
+    <section id="learn" class="p-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img
+              src="../Photos/Basics.jpg"
+              class="img-fluid w-auto"
+              alt="Basics"
+            />
+          </div>
+          <div class="col-md p-5">
+            <h2 class="fw-bold">Learn the Basics</h2>
+            <p class="lead lh-sm">
+              Whatever the reason someone becomes interested in coin collecting,
+              there are some fundamentals any collector should understand. The
+              first is to become educated, and there are multiple avenues in
+              which to do so. The oft-repeated phrase in the hobby is, ”buy the
+              book before the coin,” and it is probably the best advice any
+              collector will receive.
+            </p>
+            <p>
+              There are three key letters in the word “fundamentals”. That’s
+              right – fun. One thing to remember is that the hobby is designed
+              for enjoyment; not for speculation or investment. It is not an
+              “industry”; it’s a hobby.
+            </p>
+            <a href="" class="btn btn-dark mt-3">
+              <i class="bi bi-chevron-right"></i>
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ! End Of Learning -->
+    <!-- ** Getting Started  -->
+
+    <div class="section p-5" id="getting-started">
+      <div class="container">
+        <div class="row align-items-center justify-content-center ">
+          <div class="col-md p-5">
+            <h2 class="fw-bold">Getting Started</h2>
+            <p class="lead lh-sm">
+              It’s easy to start a coin collection. You can begin with coins
+              that you already have on hand. There are many approaches to
+              collecting coins. Common collection themes include:
+              <ol class="fw-normal">
+                  <li>Country</li>
+                  <li>Time period</li>
+                  <li>Coin finish</li>
+                  <li>Denomination</li>
+                  <li>Mint mark</li>
+                  <li>Design theme</li>
+                  <li>Artist</li>
+              </ol> 
+              A combination of finding and buying coins can be a good way to build your collection.
+            </p>
+            <p>There are professional coin grading services, but grading is subjective. As a collector, it’s important to understand coin grading to know the value of a coin and to verify grades given by others. Use resources such as the Official ANA Grading Standards for United States Coins to learn more.</p>
+            <a href="https://www.usmint.gov/learn/collecting-basics/get-started-collecting-coins" class="btn btn-primary mt-3">
+                <i class="bi bi-arrow-right"></i>
+                Getting Started</a>
+          </div>
+          <div class="col-md p-5">
+              <img src="../Photos/Getting-Started.jpg" class="img-fluid w-auto" alt="Getting Started">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ! End of Getting Started  -->
+    <!-- **FAQ Section -->
+    
+    <section id="questions" class="p-5">
+      <div class="container">
+        <h2 class="text-center mb-4 fw-bold">Frequently Asked Questions</h2>
+        <div class="accordion accordion-flush" id="questions">
+
+          <!-- **Item 1 -->
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-one"
+              >
+                How to get into Coin Collection?
+              </button>
+            </h2>
+            <div
+              id="question-one"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Think about things that you care about, that already interest you, such as iconic figures, historical events, organizations, or national parks. Then browse our catalog of collectable proof sets, uncirculated sets, commemorative coins, and special-edition products to find the first pieces for your new collection. The beauty of coin collecting is that each unique collection is a reflection of the individual collector
+              </div>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-two"
+              >
+                How much money needed to get started?
+              </button>
+            </h2>
+            <div
+              id="question-two"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                we'll consider a tiny budget to be between $50 and $100 a year. This is the type of collection where you buy something at Christmas, for the child's birthday, and usually not at any other time. The typical coin gifts of this type are ​mint sets, such as the U.S. Mint's annual uncirculated coins set, or the annual Proof set. These sets typically cost less than $25 for the uncirculated sets and approximately $50 for a non-silver proof set.  
+              </div>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-three"
+              >
+                Where to start collecting coins from?
+              </button>
+            </h2>
+            <div
+              id="question-three"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                It may vary from one person to another, depending on the fact that if they already has some coins given to them by their parents or grandparents, then they can focus to completing those sets of coins then moving onto start collecting coins they like or are interested in collecting.
+              </div>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-four"
+              >
+                How Do I sign up?
+              </button>
+            </h2>
+            <div
+              id="question-four"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Just Head over to our Log-in/Sign-up page of our website and there you can log-in to your already existing account or create a new one for yourself.
+              </div>
+            </div>
+          </div>
+          <!-- Item 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-five"
+              >
+                Will You Help me get the coins I am interested in?
+              </button>
+            </h2>
+            <div
+              id="question-five"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Yes, we would love to help you finish all the collections/sets of coins you are interested in as we have a variety of coins ranging from the infamous Silver Dollars to the Panda coins. We also have the Francs and the Ducat which are some famous coins from the human history which is known by people who are not even coin collectors, they are that much popular among people. 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ! End Of FAQ Section -->
+    <!-- ** Top individuals invested in the company  -->
+
+    <section id="Investors" class="p-5 bg-primary">
+        <div class="container">
+            <h2 class="text-center text-white fw-bold">Our Investors</h2>
+            <p class="lead text-center text-white mb-5">
+                We have some of the best people who are invested in our company and they are one of the best or if not the best individual in their particular fields.
+            </p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/69.jpg" class="mb-3 rounded-circle" alt="Investor One">
+                            <h3 class="card-title mb-3">Michael De Santa</h3>
+                            <p class="card-text">Michael De Santa is a retired bank robber, who, after making a deal with the FIB, moves alongside his family to Los Santos, where they live in a nice mansion.</p>
+                            <a href="https://twitter.com/ned_luke?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="bi bi-twitter text-dark  mx-1"></i></a>
+                            <a href="https://www.instagram.com/ned_luke/?hl=en"><i class="bi bi-instagram text-dark  mx-1"></i></a>
+                            <a href="https://en.wikipedia.org/wiki/Ned_Luke"><i class="bi bi-book mx-1 text-dark  mx-1"></i></a>
+                            <a href="https://www.cameo.com/nedluke"><i class="bi bi-camera-video-fill mx-1 text-dark"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/96.jpg" class="mb-3 rounded-circle" alt="Investor Two">
+                            <h3 class="card-title mb-3">John Wick</h3>
+                            <p class="card-text">John Wick is a fictional character and the titular protagonist of the neo-noir John Wick film series. He is portrayed by Keanu Reeves. John Wick is a legendary hitman who retired until a gang invades his house, steals his car, and kills the puppy his late wife Helen had given him. This sets him on a path of revenge, returning to the criminal underworld and eventually coming into conflict with the international organization of assassins he was once a part of.</p>
+                            <a href="https://twitter.com/keanureeves0033"><i class="bi bi-twitter text-dark  mx-1"></i></a>
+                            <a href="https://www.instagram.com/johnwickmovie/"><i class="bi bi-instagram text-dark  mx-1"></i></a>
+                            <a href="https://en.wikipedia.org/wiki/John_Wick_(character)"><i class="bi bi-book mx-1 text-dark  mx-1"></i></a>
+                            <a href="https://www.facebook.com/johnwickmovie"><i class="bi bi-facebook mx-1 text-dark"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/women/49.jpg" class="mb-3 rounded-circle" alt="Investor Three">
+                            <h3 class="card-title mb-3">Emma Charlotte Duerre Watson</h3>
+                            <p class="card-text">Emma Charlotte Duerre Watson is an English actress and activist. She has gained recognition for her roles in both blockbusters and independent films, as well as her women's rights work. Watson has been ranked among the world's highest-paid actresses by Forbes and Vanity Fair, and was named one of the 100 most influential people in the world by Time magazine in 2015.</p>
+                            <a href="https://twitter.com/EmmaWatson"><i class="bi bi-twitter text-dark  mx-1"></i></a>
+                            <a href="https://www.instagram.com/emmawatson/"><i class="bi bi-instagram text-dark  mx-1"></i></a>
+                            <a href="https://en.wikipedia.org/wiki/Emma_Watson"><i class="bi bi-book mx-1 text-dark  mx-1"></i></a>
+                            <a href="https://www.facebook.com/emmawatson"><i class="bi bi-facebook mx-1 text-dark"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/women/96.jpg" class="mb-3 rounded-circle" alt="Investor Three">
+                            <h3 class="card-title mb-3">Elizabeth Chase Olsen</h3>
+                            <p class="card-text">Elizabeth Chase Olsen is an American actress. Born in Sherman Oaks, California, Olsen began acting at age four. She starred in her debut film role in the thriller Martha Marcy May Marlene in 2011, for which she was acclaimed and nominated for a Critics' Choice Movie Award among other accolades, followed by a role in the horror film Silent House.</p>
+                            <a href="https://www.imdb.com/name/nm0647634/"><i class="bi bi-camera-reels-fill text-dark"></i></a>
+                            <a href="https://www.instagram.com/queen_elizabeth_olsen/"><i class="bi bi-instagram text-dark  mx-1"></i></a>
+                            <a href="https://en.wikipedia.org/wiki/Elizabeth_Olsen"><i class="bi bi-book mx-1 text-dark  mx-1"></i></a>
+                            <a href="https://www.facebook.com/OfficiallyElizabethOlsen"><i class="bi bi-facebook mx-1 text-dark"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ! End Of Top individuals invested in the company  -->
+    <!-- **Contact Us -->
+
+    <section class="p-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="text-center mb-4 fw-bold">Contact Information</h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="fw-bold">Main Location:</span> 9334 Shady Lane West Chester, PA 19380 
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Enrollment Phone:</span> +1 312-282-2554
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Student Phone:</span> +1 214-456-0184
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Enrollment Email:</span> (555)
+                            wcataloni.hernank@readyy.site
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Student Email:</span>
+                            kmc.blaid@hlife.site
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ! End Of Contact Us -->
+    <!-- **Footer -->
+
+    <footer class="p-5 bg-light text-info text-center position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2021 Coin Collection Company </p>
+            <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- ! End Of Footer -->
+    <!-- **Modal Code -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="started" tabindex="-1" aria-labelledby="started" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="started">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p class="lead">Fill out this Form</p>
+            <form >
+                <div class="mb-3">
+                    <label for="first-name" class="col-form-label">First Name:</label>
+                    <input type="text" class="form-control" id="first-name">
+                </div>
+                <div class="mb-3">
+                    <label for="last-name" class="col-form-label">Last Name:</label>
+                    <input type="text" class="form-control" id="last-name" />
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="col-form-label">Email:</label>
+                    <input type="email" class="form-control" id="email" />
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="col-form-label">Phone:</label>
+                    <input type="tel" class="form-control" id="phone" />
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- ! End Of Modal Code -->
+    <!-- !Script Links -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiYXJnaGFuYXRoIiwiYSI6ImNrcjBtZWM5ajBybWUydW1uZzl2dWhrcHAifQ.HIZZUum-WMlF2V-lB0eyOA';
+        var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [-71.060982 ,42.35725],
+        zoom: 18
+        });
+    </script>
+  </body>
+</html>
